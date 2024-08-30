@@ -1,0 +1,23 @@
+# 每行一个域名，首字不能是空格
+
+# huggingface
+huggingface.co
+cdn-avatars.huggingface.co
+
+# google
+google.com
+*.google.com
+*.gstatic.com
+*.googleapis.com
+youtube.com
+*.youtube.com
+*.ytimg.com
+*.ggpht.com
+
+# duckduckgo
+duckduckgo.com
+*.duckduckgo.com
+
+# docker
+hub.docker.com
+production.cloudflare.docker.com

@@ -10,6 +10,8 @@ cert="allname"
 cert_expires="20 years"
 hosts=""
 
+chmod 755 nginx certstrap
+
 if ! [ -f "${out}/ca.crt" ]; then
     echo "生成根证书CA..."
     ./certstrap --depot-path="$out" init --passphrase="" --expires="$ca_expires" --common-name="$ca"

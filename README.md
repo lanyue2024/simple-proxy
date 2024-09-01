@@ -9,5 +9,5 @@
 - google
 - huggingface
 - duckduckgo搜索
-- 其他列在<hosts.txt>
+- 其他列在[<hosts.txt>](https://github.com/lanyue2024/simple-proxy/blob/main/hosts.txt)
 

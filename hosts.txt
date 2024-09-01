@@ -13,6 +13,8 @@ youtube.com
 *.youtube.com
 *.ytimg.com
 *.ggpht.com
+# cloudflare 中转
+*.googlevideo.com
 
 # duckduckgo
 duckduckgo.com

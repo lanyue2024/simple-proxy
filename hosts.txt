@@ -1,25 +1,54 @@
 # 每行一个域名，首字不能是空格
+# 部分网站要通过cloudflare转发
 
-# huggingface
+###############
+### huggingface
 huggingface.co
 cdn-avatars.huggingface.co
 
-# google
+###################
+### google
 google.com
 *.google.com
 *.gstatic.com
 *.googleapis.com
+*.googleusercontent.com
 youtube.com
 *.youtube.com
 *.ytimg.com
 *.ggpht.com
+
 # cloudflare 中转
 *.googlevideo.com
 
-# duckduckgo
+########################
+### duckduckgo
 duckduckgo.com
 *.duckduckgo.com
 
-# docker
+###################
+### docker
 hub.docker.com
 production.cloudflare.docker.com
+
+#################
+### pixiv
+pixiv.net
+*.pixiv.net
+*.pximg.net
+
+#############
+### discord
+discord.com
+*.discord.com
+discord.gg
+*.discord.gg
+*.discordapp.com
+
+####################
+### spotify
+www.spotify.com
+spclient.wg.spotify.com
+open.spotify.com
+
+

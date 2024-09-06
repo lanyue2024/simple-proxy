@@ -3,52 +3,49 @@
 
 ###############
 ### huggingface
-huggingface.co
-cdn-avatars.huggingface.co
+huggingface.co,                  127.0.0.1:9081, d3tt2suyqs9zqv.cloudfront.net:443, d3tt2suyqs9zqv.cloudfront.net
+cdn-avatars.huggingface.co,      127.0.0.1:9081, d3tt2suyqs9zqv.cloudfront.net:443, d3tt2suyqs9zqv.cloudfront.net
 
 ###################
 ### google
-google.com
-*.google.com
-*.gstatic.com
-*.googleapis.com
-*.googleusercontent.com
-youtube.com
-*.youtube.com
-*.ytimg.com
-*.ggpht.com
-
-# cloudflare 中转
-*.googlevideo.com
+google.com,                      127.0.0.1:9081, 126.123.221.28:10689, fonts.gstatic.com
+*.google.com,                    127.0.0.1:9081, 126.123.221.28:10689, fonts.gstatic.com
+*.gstatic.com,                   127.0.0.1:9081, 126.123.221.28:10689, fonts.gstatic.com
+*.googleapis.com,                127.0.0.1:9081, 126.123.221.28:10689, fonts.gstatic.com
+*.googleusercontent.com,         127.0.0.1:9081, 126.123.221.28:10689, fonts.gstatic.com
+youtube.com,                     127.0.0.1:9081, 126.123.221.28:10689, fonts.gstatic.com
+*.youtube.com,                   127.0.0.1:9081, 126.123.221.28:10689, fonts.gstatic.com
+*.ytimg.com,                     127.0.0.1:9081, 126.123.221.28:10689, fonts.gstatic.com
+*.ggpht.com,                     127.0.0.1:9081, 126.123.221.28:10689, fonts.gstatic.com
+*.googlevideo.com,               127.0.0.1:9083,,
 
 ########################
 ### duckduckgo
-duckduckgo.com
-*.duckduckgo.com
+duckduckgo.com,                  127.0.0.1:9082, 91.108.241.204:443,
+*.duckduckgo.com,                127.0.0.1:9082, 91.108.241.204:443,
 
 ###################
 ### docker
-hub.docker.com
-production.cloudflare.docker.com
+hub.docker.com,                          127.0.0.1:9082, docker.io:443,
+production.cloudflare.docker.com,        127.0.0.1:9082, 104.16.99.215:443,
 
 #################
 ### pixiv
-pixiv.net
-*.pixiv.net
-*.pximg.net
+pixiv.net,                       127.0.0.1:9082, 210.140.92.182:443,
+*.pixiv.net,                     127.0.0.1:9082, 210.140.92.182:443,
+*.pximg.net,                     127.0.0.1:9082, s.pximg.net:443,
 
 #############
 ### discord
-discord.com
-*.discord.com
-discord.gg
-*.discord.gg
-*.discordapp.com
+discord.com,                     127.0.0.1:9082, 162.159.138.232:443,
+*.discord.com,                   127.0.0.1:9082, 162.159.138.232:443,
+discord.gg,                      127.0.0.1:9082, 162.159.130.234:443,
+*.discord.gg,                    127.0.0.1:9082, 162.159.130.234:443,
+*.discordapp.com,                127.0.0.1:9082, 162.159.129.233:443,
 
 ####################
 ### spotify
-www.spotify.com
-spclient.wg.spotify.com
-open.spotify.com
-
+www.spotify.com,                 199.193.127.138:33932,,
+spclient.wg.spotify.com,         199.193.127.138:33932,,
+open.spotify.com,                127.0.0.1:9082, 74.48.92.253:443, fastly.com
 

@@ -9,6 +9,9 @@ ca_expires="20 years"
 cert="allname"
 cert_expires="20 years"
 hosts=""
+map_host_file="${out}/map-host.conf"
+map_addr_file="${out}/map-addr.conf"
+map_sni_file="${out}/map-sni.conf"
 
 chmod 755 nginx certstrap
 
@@ -19,11 +22,26 @@ if ! [ -f "${out}/ca.crt" ]; then
 fi
 
 echo "生成自签名证书，包含以下域名："
+echo "" > $map_host_file
+echo "" > $map_addr_file
+echo "" > $map_sni_file
 echo
 while IFS='' read -r line; do
     if [[ "$line" =~ ^[\*|[:alnum:]].*$ ]]; then
-	echo $line
-        hosts="${hosts}${line},"
+	host=$(echo $line |cut -d ',' -f 1)
+	proxy_conn=$(echo $line |cut -d ',' -f 2)
+	addr=$(echo $line |cut -d ',' -f 3)
+	sni=$(echo $line |cut -d ',' -f 4)
+        echo "$host ${proxy_conn};" >> $map_host_file
+        if [ "$addr" ]; then
+            echo "$host ${addr};" >> $map_addr_file
+        fi
+        if [ "$sni" ]; then
+            echo "$host ${sni};" >> $map_sni_file
+        fi
+
+        echo $host
+        hosts="${hosts}${host},"
     fi
 done < "$hosts_file"
 allhosts="${hosts}localhost"

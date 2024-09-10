@@ -60,7 +60,7 @@ open.spotify.com,                127.0.0.1:9082, 74.48.92.253:443, fastly.com
 ####################
 ### github
 github.com                       127.0.0.1:9082,,
-gist.github.com                  127.0.0.1:9082, github.com:443,
+gist.github.com                  127.0.0.1:9082, github.com:443, github.com
 github.githubassets.com          127.0.0.1:9082, 74.48.92.253:443, fastly.com
 *.githubusercontent.com          127.0.0.1:9082, 74.48.92.253:443, fastly.com
 

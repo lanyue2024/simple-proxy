@@ -64,4 +64,7 @@ gist.github.com                  127.0.0.1:9082, github.com:443, github.com
 github.githubassets.com          127.0.0.1:9082, 74.48.92.253:443, fastly.com
 *.githubusercontent.com          127.0.0.1:9082, 74.48.92.253:443, fastly.com
 
+############
+### onedrive
+onedrive.live.com                127.0.0.1:9082, web.fe.1drv.com:443, www.azureedge.net
 

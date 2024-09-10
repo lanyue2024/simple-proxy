@@ -87,9 +87,9 @@ steamcommunity.com,  127.0.0.1:9082, help.steampowered.com:443,
 ###############
 ### x/twitter
 x.com,          127.0.0.1:9082, 104.244.45.9:443, twimg.com
-*.x.com,        127.0.0.1:9082, 104.244.45.9:443, twimg.com
 twitter.com,    127.0.0.1:9082, 104.244.45.9:443, twimg.com
-abs.twimg.com,  127.0.0.1:9082, 104.244.45.9:443, twimg.com
+abs.twimg.com,  127.0.0.1:9082, 104.244.45.9:443,
+api.x.com,      127.0.0.1:9082, 104.244.45.2:443,
 
 ################
 ### wikipedia
@@ -101,8 +101,9 @@ maps.wikimedia.org,    127.0.0.1:9082, 208.80.153.240:443,
 
 ##################
 ### reddit
-reddit.com,          127.0.0.1:9082, 74.48.92.253:443, fastly.com
-*.reddit.com,        127.0.0.1:9082, 74.48.92.253:443, fastly.com
-*.redd.it,           127.0.0.1:9082, 74.48.92.253:443, fastly.com
-*.redditmedia.com,   127.0.0.1:9082, 74.48.92.253:443, fastly.com
-*.redditstatic.com,  127.0.0.1:9082, 74.48.92.253:443, fastly.com
+*.reddit.com,              127.0.0.1:9081, 74.48.92.253:443, fastly.com
+reddit.com,                127.0.0.1:9082, 74.48.92.253:443, fastly.com
+*.redd.it,                 127.0.0.1:9082, 74.48.92.253:443, fastly.com
+*.redditmedia.com,         127.0.0.1:9082, 74.48.92.253:443, fastly.com
+*.redditstatic.com,        127.0.0.1:9082, 74.48.92.253:443, fastly.com
+*.thumbs.redditmedia.com,  127.0.0.1:9082, 74.48.92.253:443, fastly.com

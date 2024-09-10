@@ -33,7 +33,8 @@ if ( ! (Test-Path "${out}/${ca}.crt" -PathType Leaf)) {
     Echo ""
 }
 
-Echo "生成自签名证书..."
+Echo "生成自签名证书，包含以下域名："
+Echo ""
 if ( ! (Test-Path "$hosts_file" -PathType Leaf)) { 
     Echo "${hosts_file} 不存在，无法进行"
     Echo ""
@@ -57,6 +58,7 @@ foreach($line in Get-Content $hosts_file) {
         $addr = $parts[2]
         $sni = $parts[3]
         
+        Echo $simple_host
         $hosts = $hosts + $simple_host + ","
         "$simple_host ${proxy_conn};" | Out-File $map_host_file -Append -Encoding ascii
         
@@ -70,9 +72,7 @@ foreach($line in Get-Content $hosts_file) {
 }
 $allhosts = $hosts + "localhost"
 Echo ""
-Echo "包含以下域名："
-Echo $allhosts
-Echo ""
+
 
 Remove-Item "${out}/${cert}.*" -Force
 certstrap.exe --depot-path="$out" request-cert --passphrase="" --common-name="$cert" --domain="$allhosts"

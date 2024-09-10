@@ -84,3 +84,14 @@ www.quora.com,    127.0.0.1:9082, qr.ae:443,
 ### steamcommunity
 steamcommunity.com,  127.0.0.1:9082, help.steampowered.com:443,
 
+###############
+### x/twitter
+x.com,          127.0.0.1:9082, 104.244.45.9:443, twimg.com
+*.x.com,        127.0.0.1:9082, 104.244.45.9:443, twimg.com
+twitter.com,    127.0.0.1:9082, 104.244.45.9:443, twimg.com
+abs.twimg.com,  127.0.0.1:9082, 104.244.45.9:443, twimg.com
+
+
+
+
+

@@ -68,3 +68,11 @@ github.githubassets.com          127.0.0.1:9082, 74.48.92.253:443, fastly.com
 ### onedrive
 onedrive.live.com                127.0.0.1:9082, web.fe.1drv.com:443, www.azureedge.net
 
+################
+### instagram
+instagram.com       127.0.0.1:9082, 57.144.108.35:443,
+*.instagram.com     127.0.0.1:9082, 57.144.108.35:443,
+*.cdninstagram.com  127.0.0.1:9082, 57.144.108.35:443,
+
+
+
